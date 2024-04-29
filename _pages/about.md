@@ -12,6 +12,7 @@ I'm a third year undergraduate student from [School of CS](https://cise.ecust.ed
 I am very fortunate to be advised by [Prof. Yining Li] of OpenMMLab(InternLM team) from [Shanghai Artificial Intelligence Labotatory](https://www.shlab.org.cn/).
 
 You can find my CV here: [Zijian Zhang's Curriculum Vitae](../assets/ZijianZhang_CV.pdf).
+You can find my transcript here:[Zijian Zhang's transcript](../assets/Transcript.pdf).
 
 [Email](mailto:21013097@mail.ecust.edu.cn) / [Github](https://github.com/zzj1111) / [Wechat](../images/wechat.jpg) 
 
