@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I'm a third year undergraduate student from [School of EECS](https://eecs.pku.edu.cn/), [Peking University](https://www.pku.edu.cn/). My research interest includes computer vision, computer graphics, machine learning, and computational photography.
+I'm a third year undergraduate student from [School of CS]([https://cise.ecust.edu.cn/]), [East China University of Science and Technology](https://www.ecust.edu.cn/main.htm). My research interest includes Alignment of Large Languague Model(especially data-efficient alignment), security problems of Large Language Model, and Synthesizing high quality data for LLM.
 
 I am very fortunate to be advised by [Prof. Yining Li] of OpenMMLab(InternLM team) from Shanghai Artificial Intelligence Labotatory(https://www.shlab.org.cn/).
 
