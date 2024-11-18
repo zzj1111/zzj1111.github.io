@@ -13,6 +13,15 @@ I am very fortunate to be advised by [Prof. Huaxiu Yao]  from {https://www.huaxi
 You can find my CV here: [Zijian Zhang's Curriculum Vitae](../assets/ZijianZhang_CV.pdf).
 You can find my transcript here:[Zijian Zhang's transcript](../images/transcript.jpg).
 
+Publication:
+1. GRAPE: Generalizing Robot Policy via Preference Alignment
+Zijian Zhang, Kaiyuan Zheng, Zhaorun Chen, Joel Jang, Yi Li, Chaoqi Wang, Mingyu Ding, Dieter Fox,
+Huaxiu Yao
+(Under review) CVPR, 2025
+2. AnyPrefer: An Automatic Framework for Preference Data Synthesis
+Yiyang Zhou, ..., Zijian Zhang, ..., Huaxiu Yao
+(Under review) ICLR, 2025
+
 [Email](mailto:21013097@mail.ecust.edu.cn) / [Github](https://github.com/zzj1111) / [Wechat](../images/wechat.jpg) 
 
 
