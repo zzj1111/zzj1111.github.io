@@ -15,10 +15,12 @@ You can find my transcript here:[Zijian Zhang's transcript](../images/transcript
 
 Publication:
 1. GRAPE: Generalizing Robot Policy via Preference Alignment
+
 Zijian Zhang, Kaiyuan Zheng, Zhaorun Chen, Joel Jang, Yi Li, Chaoqi Wang, Mingyu Ding, Dieter Fox,
 Huaxiu Yao
 (Under review) CVPR, 2025
 2. AnyPrefer: An Automatic Framework for Preference Data Synthesis
+
 Yiyang Zhou, ..., Zijian Zhang, ..., Huaxiu Yao
 (Under review) ICLR, 2025
 
