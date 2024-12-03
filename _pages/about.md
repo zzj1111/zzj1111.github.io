@@ -18,11 +18,12 @@ Publication:
 
 Zijian Zhang, Kaiyuan Zheng, Zhaorun Chen, Joel Jang, Yi Li, Chaoqi Wang, Mingyu Ding, Dieter Fox,
 Huaxiu Yao
-(Under review) CVPR, 2025
+Preprint, 2025
+
 2. AnyPrefer: An Automatic Framework for Preference Data Synthesis
 
 Yiyang Zhou, ..., Zijian Zhang, ..., Huaxiu Yao
-(Under review) ICLR, 2025
+Preprint, 2025
 
 [Email](mailto:21013097@mail.ecust.edu.cn) / [Github](https://github.com/zzj1111) / [Wechat](../images/wechat.jpg) 
 
