@@ -7,6 +7,9 @@ redirect_from:
   - /about.html
 ---
 
+I'm looking for 25 Fall Phd program in US (maybe somewhere else, too) ! Feel free to contact me via Email and Wechat!
+
+
 I'm a senior undergraduate student from [School of CS](https://cise.ecust.edu.cn/), [East China University of Science and Technology](https://www.ecust.edu.cn/main.htm). My research interests include alignment for LLM (especially data-efficient alignment) \& Vision-Language-Action models and post-training for embodied AI
 
 I am very fortunate to be advised by [Prof. Huaxiu Yao]  from {https://www.huaxiuyao.io/}  {Huaxiu Yao's Lab} @ University of North Carolina at Chapel Hill
