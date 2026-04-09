@@ -66,8 +66,10 @@ Invited Talks
 
 Academic Service
 ======
+* Reviewer for NeurIPS 2026
 * Reviewer for ICML 2026
 * Reviewer for ICLR 2026
+* Reviewer for COLM 2026
 * Reviewer for CVPR 2025
 * Reviewer for NeurIPS Workshop 2024
 
