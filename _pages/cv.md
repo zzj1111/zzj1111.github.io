@@ -71,6 +71,7 @@ Academic Service
 * Reviewer for ICLR 2026
 * Reviewer for COLM 2026
 * Reviewer for CVPR 2025
+* Reviewer for CoRL 2025
 * Reviewer for NeurIPS Workshop 2024
 
 Skills
