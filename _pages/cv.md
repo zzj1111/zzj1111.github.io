@@ -57,7 +57,12 @@ Publications
 
 Invited Talks
 ======
-*Coming soon.*
+* **LLM for Kernel: Automated Agentic GPU Programming Framework — From Single Kernel to E2E Programs**  
+  Amazon | Feb 2026
+* **RL for VLA Models: Generalizing Robot Policy via Preference Alignment**  
+  Department of Electronic Engineering, Tsinghua University (清华大学电子工程系) | Jan 2025
+* **VLA RLHF: Generalizing Robot Policy via Preference Alignment**  
+  3D Vision Workshop (3D视觉工坊) | Jan 2025
 
 Academic Service
 ======
