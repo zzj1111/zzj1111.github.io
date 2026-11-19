@@ -37,7 +37,7 @@ Zijian Zhang 的个人学术主页：<https://zzj1111.github.io>
 
 ### CV 的 PDF
 
-`assets/ZijianZhang_CV.pdf` 目前是旧版，只为保持旧链接可用，页面上没有入口。换成新的公开版后，取消 `_pages/cv.md` 和 `_data/socials.yml` 里 `cv_pdf` 那一行的注释，CV 页和首页图标栏就会出现 PDF 入口。
+PDF 放在 `assets/ZijianZhang_CV.pdf`，CV 页和首页图标栏都有入口（由 `_pages/cv.md` 和 `_data/socials.yml` 里的 `cv_pdf` 控制）。更新时用同名文件覆盖即可；注意这是公开文件，不要包含手机号、审稿分数等信息。
 
 ## 部署
 
