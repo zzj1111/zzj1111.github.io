@@ -1,42 +1,65 @@
+# zzj1111.github.io
 
-# Academic Pages
+Zijian Zhang 的个人学术主页：<https://zzj1111.github.io>
 
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
+基于 [al-folio](https://github.com/alshedivat/al-folio) v1.x starter（2026-11-16 的 `main`，commit `fde4cbf`）。主题本身（布局、样式、脚本）由 `Gemfile` 里的 `al_folio_core` 等 gem 提供，这个仓库只放内容和配置。
 
-Academic Pages is a Github Pages template for academic websites.
+## 改内容时改哪里
 
+| 想改什么 | 改哪个文件 |
+| --- | --- |
+| 首页自我介绍、照片下方的文字 | `_pages/about.md` |
+| 论文 | `_bibliography/papers.bib` |
+| 首页 news | `_news/` 下每条一个 `.md` |
+| CV 页（经历、教育、奖项、服务、技能） | `_data/cv.yml` |
+| 邮箱、Scholar、GitHub 等图标 | `_data/socials.yml` |
+| 头像 | `assets/img/prof_pic.jpg` |
+| 论文左侧的会议徽章（颜色、链接） | `_data/venues.yml` |
+| 合作者姓名上的主页链接 | `_data/coauthors.yml` |
+| 站点标题、描述、功能开关 | `_config.yml`（改完需要重新构建才生效） |
 
-# Getting Started
+### 加一篇论文
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+在 `_bibliography/papers.bib` 里加一条 BibTeX。文件里的先后顺序就是页面上同一年内的顺序。除标准字段外，常用的自定义字段：
 
-See more info at https://academicpages.github.io/
+- `abbr`：左侧徽章文字（`ICML`、`Preprint` 等，对应 `_data/venues.yml`）
+- `selected = {true}`：同时显示在首页的 selected publications
+- `arxiv = {2611.14515}`、`code = {...}`、`website = {...}`、`pdf = {...}`、`slides = {...}`、`poster = {...}`：生成对应按钮
+- `note = {...}`：会议行下面的一行小字（例如 `Under review`），不会出现在 Bib 弹窗里
+- `preview = {xxx.png}`：缩略图，图片放在 `assets/img/publication_preview/`
+- 共同一作：在姓后面加 `*`（如 `Zhang*, Zijian`），并加 `annotation = {* Equal contribution}`
 
-## Running Locally
+论文中稿后：把 `@article` 改成 `@inproceedings`，`journal` 换成 `booktitle`，改 `abbr`，删掉 `note`。
 
-When you are initially working your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+### 加一条 news
 
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+复制 `_news/` 里任意一个文件，改文件名、`date` 和正文即可。首页显示最新 5 条，全部在 `/news/`。
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essentials gcc make`
+### CV 的 PDF
 
-# Maintenance 
+`assets/ZijianZhang_CV.pdf` 目前是旧版，只为保持旧链接可用，页面上没有入口。换成新的公开版后，取消 `_pages/cv.md` 和 `_data/socials.yml` 里 `cv_pdf` 那一行的注释，CV 页和首页图标栏就会出现 PDF 入口。
 
-Bug reports and feature requests to the template  should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+## 部署
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+推送到 `main` 后，GitHub Actions 的 **Deploy site** 会构建站点并发布到 `gh-pages` 分支（不要手动改这个分支）。仓库设置要求：
 
-## Bugfixes and enhancements
+- Settings → Actions → General → Workflow permissions：**Read and write permissions**
+- Settings → Pages → Source：**Deploy from a branch**，分支选 **gh-pages**
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+## 本地预览
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+```bash
+docker compose pull
+docker compose up
+# 打开 http://localhost:8080
+```
+
+## 注意
+
+- 不要单独改 `Gemfile`：CI 按 `Gemfile.lock` 安装依赖，两者不一致会构建失败。要升级主题请运行 `bundle update` 并一起提交 `Gemfile.lock`。
+- `_config.yml` 里的 `baseurl:` 必须保留且留空。
+- 更多用法见 al-folio 文档：<https://github.com/alshedivat/al-folio/blob/main/docs/CUSTOMIZE.md>
+
+## License
+
+主题与 starter 代码来自 al-folio，遵循 MIT License（见 `LICENSE`）。
