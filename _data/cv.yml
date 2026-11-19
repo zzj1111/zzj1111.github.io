@@ -1,0 +1,151 @@
+# Data for the CV page (/cv/). Edit this file to update the page; Markdown is allowed in
+# `summary` and `highlights`. Entries in Experience and Education are sorted by date automatically.
+cv:
+  name: Zijian Zhang
+  label: PhD Student, Electrical and Computer Engineering, University of Minnesota
+  email: zha00175@umn.edu
+  website: https://zzj1111.github.io
+  summary: >-
+    My research focuses on self-improving LLM agents via reinforcement learning:
+    (1) **agentic RL and multi-agent systems** for real-world coding tasks such as GPU kernel optimization;
+    (2) **recursive self-improvement** of the RL post-training loop itself, where the system refines its own
+    scaffolds, rewards, data, and evaluation to keep pushing the capability frontier.
+
+  sections:
+    Experience:
+      - company: Mingyi Hong's Lab, University of Minnesota
+        position: PhD Student
+        start_date: "2025-09"
+        summary: "Advisor: [Prof. Mingyi Hong](https://people.ece.umn.edu/~mhong/mingyi.html)"
+        highlights:
+          - >-
+            [**AutoScaffold**](https://arxiv.org/abs/2611.14515) (first author, under review):
+            an AI-for-AI framework where a frozen teacher LLM reads the student's RL training experience,
+            diagnoses its bottlenecks, and writes adaptive scaffolds (class-level strategies and instance-level hints)
+            into the training prompts, with no human intervention. Evaluated without scaffolds, students trained with
+            AutoScaffold **outperform the corresponding RL baselines in all four domains** (ALFWorld, search-based QA,
+            math reasoning, and GPU kernel generation), e.g., +7.2 points in ALFWorld success rate, and surpass
+            QuestA's math accuracy with about one-third of the training steps.
+            **Joint work with JPMorgan AI Research.**
+          - >-
+            [**Is One Layer Enough?**](https://arxiv.org/abs/2607.01232) (first author, under review):
+            an empirical study of RL training dynamics in LLMs. Showed that **training a single transformer layer
+            can match or surpass full-parameter RL training** across seven models, four model families, and three
+            RL algorithms (GRPO, Dr. GRPO, GiGPO). Identified that RL improvements concentrate in middle layers,
+            enabling significant training-cost reduction on mathematical reasoning, code generation, and agentic
+            decision-making tasks.
+          - >-
+            [**StitchCUDA**](https://arxiv.org/abs/2603.02637) (co-first author, ICML 2026):
+            a multi-agent workflow for end-to-end CUDA code generation and optimization, enhanced by rubric-based
+            agentic RL. Achieves SOTA in end-to-end CUDA code generation, with a **32B RL-trained model outperforming
+            GPT-5.2**, while avoiding reward hacking and significantly reducing rollout overhead by decomposing the
+            coding agent into atomic skills.
+          - >-
+            [**CudaForge**](https://arxiv.org/abs/2511.01884) (first author, under review):
+            a simple, effective, and low-cost multi-agent workflow for CUDA kernel generation and optimization.
+            Achieves SOTA on KernelBench Levels 1–3 while costing only $0.3 in API calls and 25 minutes on a single
+            RTX 6000.
+          - >-
+            [**CUDAHercules**](https://arxiv.org/abs/2605.08467) (under review):
+            co-developed a benchmark for hardware-aware, expert-level CUDA optimization that evaluates LLMs on
+            real-world GPU programming tasks requiring a deep understanding of hardware architecture.
+          - >-
+            [**InfantAgent-Next**](https://arxiv.org/abs/2505.10887) (NeurIPS 2025):
+            contributed to a multimodal generalist agent for computer interaction that modularizes agent workflows,
+            tool selection, and tool execution under a unified dialogue context.
+
+      - company: Huaxiu Yao's Lab, University of North Carolina at Chapel Hill
+        position: Research Assistant
+        start_date: "2024-05"
+        end_date: "2025-01"
+        summary: "Advisor: [Prof. Huaxiu Yao](https://www.huaxiuyao.io/)"
+        highlights:
+          - >-
+            [**GRAPE**](https://arxiv.org/abs/2411.19309) (first author, ICRA 2026):
+            a trajectory-wise DPO method for VLA model post-training that improves the safety, efficiency, and
+            success rate of the VLA policy.
+          - >-
+            [**AnyPrefer**](https://arxiv.org/abs/2504.19276) (ICLR 2025):
+            contributed to an automatic preference-data synthesis framework, working on its application to VLA
+            models via DPO and iterative training, which improved robot performance across several tasks.
+
+      - company: Machine Learning Group, Microsoft Research Asia
+        position: Research Assistant
+        start_date: "2024-10"
+        end_date: "2025-04"
+        summary: "Mentor: [Zhong Li](https://www.microsoft.com/en-us/research/people/lzhong/)"
+        highlights:
+          - "**Data mixing**: efficient LLM training by dynamically sampling from mixtures of NLP datasets."
+          - "**CoT data selection**: improved LLM math reasoning by selecting high-quality CoT data via LLM-as-a-Judge."
+          - "**Training dynamics**: analyzed training signals (e.g., loss) to better monitor and control the training process."
+
+      - company: InternLM2 Team, Shanghai AI Lab
+        position: Research Assistant
+        start_date: "2023-11"
+        end_date: "2024-05"
+        summary: "Mentor: [Yining Li](https://liyn.site/)"
+        highlights:
+          - >-
+            **SFT data selection**: proposed an efficient method to extract high-quality samples from InternLM2's SFT
+            dataset; fine-tuning on the top 10% highest-scoring examples outperformed training on the full
+            instruction dataset.
+          - >-
+            **Identity-attack robustness**: built a targeted fine-tuning dataset to strengthen the model's
+            self-cognition, and introduced a benchmark to evaluate robustness to identity attacks.
+          - >-
+            **InternLM/InternLM2**: participated in the research and development of these widely used open-source
+            LLMs.
+
+    Education:
+      - institution: University of Minnesota
+        location: Minneapolis, MN, USA
+        url: https://twin-cities.umn.edu/
+        area: Electrical and Computer Engineering
+        studyType: PhD
+        start_date: "2025-09"
+        end_date: "2029-05"
+        highlights:
+          - "Fully funded PhD student, advised by [Prof. Mingyi Hong](https://people.ece.umn.edu/~mhong/mingyi.html)"
+          - "Expected graduation: May 2029"
+          - "GPA: 4/4"
+
+      - institution: East China University of Science and Technology
+        location: Shanghai, China
+        url: https://www.ecust.edu.cn/
+        area: Computer Science
+        studyType: B.S.
+        start_date: "2021-09"
+        end_date: "2025-06"
+        highlights:
+          - "GPA: 88/100"
+
+    Invited Talks:
+      - bullet: "**LLM for Kernel: Automated Agentic GPU Programming Framework — From Single Kernel to E2E Programs.** Amazon, Feb 2026"
+      - bullet: "**RL for VLA Models: Generalizing Robot Policy via Preference Alignment.** Department of Electronic Engineering, Tsinghua University (清华大学电子工程系), Jan 2025"
+      - bullet: "**VLA RLHF: Generalizing Robot Policy via Preference Alignment.** 3D Vision Workshop (3D视觉工坊), Jan 2025"
+
+    Awards:
+      - title: Department Fellowship
+        awarder: University of Minnesota
+      - title: Scholarship for Outstanding Students, First Prize
+        awarder: East China University of Science and Technology
+      - title: Outstanding Student Leaders
+        awarder: East China University of Science and Technology
+      - title: National Scholarship
+        awarder: Ministry of Education, China
+      - title: National Mathematics Competition for College Students, First Prize
+        awarder: Chinese Mathematical Society
+      - title: Suzhou Industrial Park Scholarship
+        awarder: Suzhou Government
+
+    Services:
+      - label: Reviewer
+        details: NeurIPS 2026, ICML 2026, ICLR 2026, COLM 2026, CVPR 2025, CoRL 2025, NeurIPS 2024 Workshop
+
+    Skills:
+      - name: Engineering
+        keywords: "Agentic RL / RLVR / rubric-based RL on the VeRL framework; agentic RL training of up to 32B models"
+      - name: Programming
+        keywords: "Python, PyTorch, C/C++, CUDA"
+      - name: Languages
+        keywords: "Mandarin (native), English (TOEFL 100: R 27, L 24, S 22, W 27)"

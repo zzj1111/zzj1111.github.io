@@ -1,0 +1,10 @@
+# Optional styling for the badges shown to the left of each publication.
+# Keys must match the `abbr` field in _bibliography/papers.bib. Example:
+#
+#   "ICML":
+#     url: https://icml.cc/   # makes the badge a link
+#     color: "#00369f"        # overrides the badge background
+#
+# Left empty on purpose: badge text is white in light mode and near-black in dark mode (linked badges are
+# always white), so the default theme color is the only setup that looks consistent in both modes.
+{}

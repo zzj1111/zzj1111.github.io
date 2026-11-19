@@ -1,0 +1,9 @@
+# this file contains the social media links and usernames of the author
+# the socials will be displayed in the order they are defined here
+# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+email: zha00175@umn.edu # your email address
+scholar_userid: FDfq98sAAAAJ # your Google Scholar ID
+github_username: zzj1111 # your GitHub user name
+# To add a CV icon, put a public version of your CV at assets/ZijianZhang_CV.pdf and uncomment:
+# cv_pdf: /assets/ZijianZhang_CV.pdf # path to your CV PDF file
+# Other supported keys include: linkedin_username, x_username, orcid_id, dblp_url, semanticscholar_id, bluesky_url

@@ -1,0 +1,9 @@
+# Co-authors listed here are linked to their homepages in the publication list.
+# Keys are last names, lower-cased and without accents; `firstname` lists the spellings used in papers.bib.
+"hong":
+  - firstname: ["Mingyi"]
+    url: https://people.ece.umn.edu/~mhong/mingyi.html
+
+"yao":
+  - firstname: ["Huaxiu"]
+    url: https://www.huaxiuyao.io/
