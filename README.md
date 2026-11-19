@@ -33,7 +33,9 @@ Zijian Zhang 的个人学术主页：<https://zzj1111.github.io>
 
 ### 加一条 news
 
-复制 `_news/` 里任意一个文件，改文件名、`date` 和正文即可。首页显示最新 5 条，全部在 `/news/`。
+复制 `_news/` 里任意一个文件，改文件名、`date` 和正文即可。首页显示最新 8 条（`_pages/about.md` 里的 `announcements.limit`），全部在 `/news/`。
+
+只知道月份的事件（例如某次报告）：`date` 写当月 1 号，并加一行 `month_only: true`，页面上只显示 "Feb 2026"。这个功能来自本仓库的 `_includes/news.liquid`，它覆盖了主题里的同名文件；升级主题后如果 news 显示异常，先对比这个文件。
 
 ### CV 的 PDF
 
